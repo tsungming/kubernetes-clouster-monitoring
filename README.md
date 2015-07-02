@@ -46,6 +46,16 @@ kube-dns-c806v                       3/3       Running   0          23m
 monitoring-heapster-v4-v6i06         1/1       Running   0          4m
 monitoring-influx-grafana-v1-x1uur   2/2       Running   0          4m
 ```
+   find the host ip of monitoring-influx-grafana-v1-x1uur
+```
+kubectl get pods/monitoring-influx-grafana-v1-x1uur -o yaml | grep host
+vagrant ssh node-01 -c "ifconfig"
+```
+### Step3. influxDB API
+```
+curl -G 'http://172.31.8.100:8086/db/k8s/series?u=root&p=root' --data-urlencode "q=list series"
+curl -G 'http://172.31.8.100:8086/db/k8s/series?u=root&p=root' --data-urlencode "q=select * from \"memory/usage_bytes_gauge\" limit 10"
+```
 
 
 ## Licensing
