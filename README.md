@@ -18,7 +18,17 @@ source ~/.bash_profile
 ```
   The kubectl command:
   
-kubectl get: Display one or many resources.Possible resources include pods (po), replication controllers (rc), services(svc), nodes, events (ev), component statuses (cs), limit ranges (limits),nodes (no), persistent volumes (pv), persistent volume claims (pvc) or resource quotas (quota).
+kubectl get: Display one or many resources. Possible resources include pods (po), replication controllers (rc), services(svc), nodes, events (ev), component statuses (cs), limit ranges (limits),nodes (no), persistent volumes (pv), persistent volume claims (pvc) or resource quotas (quota).
+
+kubectl logs:Print the logs for a container in a pod. If the pod has only one container, the container name is optional.
+
+Usage: 
+  kubectl logs [-f] [-p] POD [CONTAINER] [flags]
+
+Aliases:
+  logs, log
+
+kubectl describe: Show details of a specific resource.This command joins many API calls together to form a detailed description of a given resource.
 
 ```
 kubectl get pods
@@ -28,7 +38,11 @@ kubectl logs POD_NSME CONTAINER (ex kubectl logs kube-dns-c806v etcd)
 
 ```
 
+### Step2. Deploy cluster-monitoring
 
+```
+kubectl create -f addons/cluster-monitoring/influxdb/
+```
 
 ## Licensing
 
