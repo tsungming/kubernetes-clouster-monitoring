@@ -11,7 +11,7 @@ cluster setup with **[Vagrant](https://www.vagrantup.com)** (1.7.2+) and
  * a supported Vagrant hypervisor
  	* **[Virtualbox](https://www.virtualbox.org)** (the default)
  	* **[Parallels Desktop](http://www.parallels.com/eu/products/desktop/)**
- 	* **[VMware Fusion](http://www.vmware.com/products/fusion)** or **[VMware Workstation](http://www.vmware.com/products/workstation)**
+ 	
 
 ### MacOS X
 
