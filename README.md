@@ -10,12 +10,13 @@ Reference:
 **[kubernetes/cluster/addons](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/cluster/addons)**
 
 
-Step1. kubernetes clouster (one master and three nodes)
+## Deploy Kubernetes (one master and three nodes)
 
 ```
 vagrant up --provider=virtualbox
 source ~/.bash_profile
 ```
+
 
 
 
