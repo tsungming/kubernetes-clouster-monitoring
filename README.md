@@ -1,7 +1,8 @@
-# kubernetes-vagrant-coreos-cluster
+# kubernetes-clouster-monitoring
 Turnkey **[Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes)**
 cluster setup with **[Vagrant](https://www.vagrantup.com)** (1.7.2+) and
 **[CoreOS](https://coreos.com)**.
+This clouster is builded by  **[pires/kubernetes-vagrant-coreos-cluster](https://github.com/pires/kubernetes-vagrant-coreos-cluster)**
 
 ####If you're lazy, or in a hurry, jump to the [TL;DR](#tldr) section.
 
