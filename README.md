@@ -10,13 +10,23 @@ Reference:
 **[kubernetes/cluster/addons](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/cluster/addons)**
 
 
-### step1. Deploy Kubernetes 
+### Step1. Deploy Kubernetes 
 
 ```
 vagrant up --provider=virtualbox
 source ~/.bash_profile
 ```
+  The kubectl command:
+  
+kubectl get: Display one or many resources.Possible resources include pods (po), replication controllers (rc), services(svc), nodes, events (ev), component statuses (cs), limit ranges (limits),nodes (no), persistent volumes (pv), persistent volume claims (pvc) or resource quotas (quota).
 
+```
+kubectl get pods
+kubectl get pods/(NAME) -o yaml
+kubectl describe pods/(NAME)
+kubectl logs POD_NSME CONTAINER (ex kubectl logs kube-dns-c806v etcd)
+
+```
 
 
 
