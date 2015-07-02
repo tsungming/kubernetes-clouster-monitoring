@@ -10,7 +10,7 @@ Reference:
 **[kubernetes/cluster/addons](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/cluster/addons)**
 
 
-## Deploy Kubernetes (one master and three nodes)
+### step1. Deploy Kubernetes 
 
 ```
 vagrant up --provider=virtualbox
