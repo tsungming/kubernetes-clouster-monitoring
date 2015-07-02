@@ -9,6 +9,8 @@ Reference:
 
 **[kubernetes/cluster/addons](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/cluster/addons)**
 
+**[HeapsterでKubernetes](http://qiita.com/atskimura/items/0e0e3396e88eb6158930)**
+
 
 ### Step1. Deploy Kubernetes 
 
