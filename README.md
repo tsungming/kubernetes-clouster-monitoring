@@ -3,9 +3,12 @@ Turnkey **[Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes)**
 cluster setup with **[Vagrant](https://www.vagrantup.com)** (1.7.2+) and
 **[CoreOS](https://coreos.com)**.
 
-Reference
+Reference:
+
 **[pires/kubernetes-vagrant-coreos-cluster](https://github.com/pires/kubernetes-vagrant-coreos-cluster)**
+
 **[kubernetes/cluster/addons](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/cluster/addons)**
+
 
 
 
