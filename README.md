@@ -37,6 +37,16 @@ kubectl logs POD_NSME CONTAINER (ex kubectl logs kube-dns-c806v etcd)
 ```
 kubectl create -f addons/cluster-monitoring/influxdb/
 ```
+   check the pods is runing
+```
+kubectl get pods
+=>
+NAME                                 READY     REASON    RESTARTS   AGE
+kube-dns-c806v                       3/3       Running   0          23m
+monitoring-heapster-v4-v6i06         1/1       Running   0          4m
+monitoring-influx-grafana-v1-x1uur   2/2       Running   0          4m
+```
+
 
 ## Licensing
 
