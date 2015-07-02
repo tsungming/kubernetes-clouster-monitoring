@@ -22,12 +22,6 @@ kubectl get: Display one or many resources. Possible resources include pods (po)
 
 kubectl logs:Print the logs for a container in a pod. If the pod has only one container, the container name is optional.
 
-Usage: 
-  kubectl logs [-f] [-p] POD [CONTAINER] [flags]
-
-Aliases:
-  logs, log
-
 kubectl describe: Show details of a specific resource.This command joins many API calls together to form a detailed description of a given resource.
 
 ```
