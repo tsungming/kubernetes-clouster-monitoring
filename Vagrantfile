@@ -63,9 +63,9 @@ SSL_FILE = File.join(File.dirname(__FILE__), "kube-serviceaccount.key")
 USE_DOCKERCFG = ENV['USE_DOCKERCFG'] || false
 DOCKERCFG = File.expand_path(ENV['DOCKERCFG'] || "~/.dockercfg")
 
-KUBERNETES_VERSION = ENV['KUBERNETES_VERSION'] || '0.19.3'
+KUBERNETES_VERSION = ENV['KUBERNETES_VERSION'] || '1.0.1'
 
-CHANNEL = ENV['CHANNEL'] || 'beta'
+CHANNEL = ENV['CHANNEL'] || 'alpha'
 #if CHANNEL != 'alpha'
 #  puts "============================================================================="
 #  puts "As this is a fastly evolving technology CoreOS' alpha channel is the only one"
@@ -85,7 +85,7 @@ if COREOS_VERSION == "latest"
     open(url).read().scan(/COREOS_VERSION=.*/)[0].gsub('COREOS_VERSION=', ''))
 end
 
-NUM_INSTANCES = ENV['NUM_INSTANCES'] || 2
+NUM_INSTANCES = ENV['NUM_INSTANCES'] || 3
 
 MASTER_MEM = ENV['MASTER_MEM'] || 1024
 MASTER_CPUS = ENV['MASTER_CPUS'] || 1
